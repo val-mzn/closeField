@@ -21,10 +21,10 @@
     });
 
  
-
+    var text = ""
     {% for farm in farms %}
 
-        let text = '<h5>{{farm.name}}</h5>'
+        text = '<h5>{{farm.name}}</h5>'
         text += '<h6 class="mb-2 text-muted">{{farm.city}} {{farm.street}} {{farm.number}}</h6>'
         {% for product in farm.products.all %}
             text += '<div class="row">'
